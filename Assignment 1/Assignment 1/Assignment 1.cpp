@@ -8,4 +8,6 @@
 #include <cstdlib>
 #include <algorithm>
 
-int main()
+int main() {
+	
+}
