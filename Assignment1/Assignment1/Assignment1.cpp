@@ -21,6 +21,7 @@ void Chisel();
 
 char YesOrNo;
 char SellOrDont;
+char BuyOrSell;
 
 int Number;
 
