@@ -25,8 +25,8 @@ bool buyisRunning = true;
 bool sellisRunning = true;
 bool gameisRunning = true;
 
-int mCoin = 50;
-int pCoin = 50;
+int mCoin = 10;
+int pCoin = 30;
 
 int bowPrice = 15;
 int spearPrice = 15;
@@ -60,6 +60,8 @@ int main()
 
 		std::cout << "Igor: Hello stranger my name is Igor The Merchant.\nWould you like to buy or sell anything? \n";
 		std::cout << "[b] = Buy [s] = Sell [y] = Exit\n";
+		std::cout << "I have " << mCoin << " coins.\n";
+		std::cout << "You have " << pCoin << " coins.\n";
 
 		std::cin >> BuyOrSellOrNo;
 		if (BuyOrSellOrNo == 'b') {
@@ -80,7 +82,7 @@ int main()
 					if (pCoin < bowPrice) {
 						std::cout << "Sorry you don't have enough coins for the bow.\n";
 					}
-					if (merchantBowQuantity < 1) {
+					else if (merchantBowQuantity < 1) {
 						std::cout << "The bow is sold out.\n";
 					}
 					else {
@@ -91,7 +93,7 @@ int main()
 					if (pCoin < spearPrice) {
 						std::cout << "Sorry you don't have enough coins for the spear.\n";
 					}
-					if (merchantSpearQuantity < 1) {
+					else if (merchantSpearQuantity < 1) {
 						std::cout << "The spear is sold out.\n";
 					}
 					else {
@@ -102,7 +104,7 @@ int main()
 					if (pCoin < shieldPrice) {
 						std::cout << "Sorry you don't have enough coins for the shield.\n";
 					}
-					if (merchantShieldQuantity < 1) {
+					else if (merchantShieldQuantity < 1) {
 						std::cout << "The shield is sold out.\n";
 					}
 					else {
@@ -130,7 +132,7 @@ int main()
 					if (mCoin < hammerPrice) {
 						std::cout << "Sorry I don't have enough coins for the hammer.\n";
 					}
-					if (playerHammerQuantity < 1) {
+					else if (playerHammerQuantity < 1) {
 						std::cout << "You don't have anymore hammers.\n";
 					}
 					else {
@@ -141,7 +143,7 @@ int main()
 					if (mCoin < sicklePrice) {
 						std::cout << "Sorry I don't have enough coins for the sickle.\n";
 					}
-					if (playerSickleQuantity < 1) {
+					else if (playerSickleQuantity < 1) {
 						std::cout << "You don't have anymore sickles.\n";
 					}
 					else {
@@ -152,7 +154,7 @@ int main()
 					if (mCoin < chiselPrice) {
 						std::cout << "Sorry I don't have enough coins for the sickle.\n";
 					}
-					if (playerChiselQuantity < 1) {
+					else if (playerChiselQuantity < 1) {
 						std::cout << "You don't have anymore chisels.\n";
 					}
 					else {
